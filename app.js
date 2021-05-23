@@ -13,6 +13,7 @@ app.use(methodOverride());
 app.set('port', process.env.PORT || 3000)
 
 // CONNECT BBD
+//mongodb+srv://ivandev:<password>@moviecbd.op4sh.mongodb.net/test url database AWS
 mongoose.connect('mongodb://localhost:27017/MovieDB', {
     useCreateIndex: true,
     useNewUrlParser: true,
