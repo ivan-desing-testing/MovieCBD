@@ -13,9 +13,8 @@ app.use(methodOverride());
 app.set('port', process.env.PORT || 3000)
 
 // CONNECT BBD
-// mongodb+srv://ivandev:ivandev@moviecbd.op4sh.mongodb.net/MovieDB?retryWrites=true&w=majority url database AWS
-// mongodb://localhost:27017/MovieDB URL local
-mongoose.connect('mongodb+srv://ivandev:ivandev@moviecbd.op4sh.mongodb.net/MovieDB?retryWrites=true&w=majority', {
+
+mongoose.connect('mongodb://localhost:27017/MovieDB', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false,
