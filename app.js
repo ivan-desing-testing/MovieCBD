@@ -195,8 +195,18 @@ router.get('/api/movies/list/ranking', function(req, res) {
          .then(x => res.json(x))
 });
 
-router.get('/api/main', function(req, res) {
-    main().then(() => res.send(`saved`))
+router.delete('/api/movies/delete/:id', function(req, res) {
+    const id = parseInt(req.params.id);
+    Movie.findByIdAndDelete(id)
+         .then(x => res.send('Pelicula borrada con exito.'))
+         .catch(() => res.send(`Error al borrar pelicula.`));
+});
+
+router.delete('/api/actors/delete/:id', function(req, res) {
+    const id = parseInt(req.params.id);
+    Actor.findByIdAndDelete(id)
+         .then(x => res.send('Actor eliminado con exito.'))
+         .catch(() => res.send(`Error al borrar el actor.`));
 });
 
 

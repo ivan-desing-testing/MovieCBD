@@ -115,6 +115,14 @@ Devuelve una lista de películas ordenadas de mayor a menor puntuación (score).
 
 Devuelve una lista de películas ordenadas de mayor a menor ranking.
 
+### DELETE:    /movies/delete/{id}
+
+Borra la pelicula con {id} especificado.
+
+### DELETE:    /actors/delete/{id}
+
+Borra el actor con id especificado.
+
 ## Enlace al despliegue en Heroku
 
 https://mongomovie--cbd-api.herokuapp.com/
