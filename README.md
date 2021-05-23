@@ -7,8 +7,7 @@ Desarrollado con MongoDB y NodeJS.
 
 ## Instalación del entorno local
 
-El sistema debe tener instalado NodeJS y NPM.
-No es necesario instalar MongoDB, ya que la base de datos conectada por defecto es accesible de forma online.
+El sistema debe tener instalado MongoDB, NodeJS y NPM.
 
 https://www.mongodb.com/es
 
